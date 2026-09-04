@@ -18,6 +18,14 @@ https://calendly.com/zagwechinno/30min
 
 Update the `data-url` on the `.calendly-inline-widget` element in `index.html` with your real Calendly event link.
 
+The "My Breakthrough" section (right under the hero) expects a headshot at:
+
+```
+assets/zagwe-chinno.jpg
+```
+
+Add your photo at that exact path — square-ish crop works best, the section frames it as a 1:1 square. If you use a different filename or extension, update the `src` on the `<img>` in the `#breakthrough` section of `index.html` to match.
+
 ## Deploying with GitHub Pages
 
 1. Repo Settings → Pages → Source: deploy from branch
