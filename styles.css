@@ -246,6 +246,38 @@ h3{font-size:20px;margin-bottom:10px;}
 }
 .domain-card p{color:var(--ink-dim);font-size:15px;}
 
+/* PROBLEM */
+.problem{padding:90px 0 0;}
+.problem h2{max-width:600px;}
+.problem .section-sub{margin-bottom:0;font-size:18px;}
+
+/* SERVICES */
+.services{padding:80px 0 100px;border-bottom:1px solid var(--line);}
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line);
+}
+.service-card{background:var(--bg);padding:28px 24px;}
+.service-no{
+  font-family:var(--mono);
+  font-size:13px;
+  color:var(--accent);
+  display:block;
+  margin-bottom:14px;
+}
+.service-card h3{font-size:17px;margin-bottom:8px;}
+.service-card p{color:var(--ink-dim);font-size:14px;}
+
+@media (max-width:860px){
+  .service-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:520px){
+  .service-grid{grid-template-columns:1fr;}
+}
+
 /* BOOK CALL */
 .book-call{padding:110px 0 120px;text-align:left;}
 .book-call h2{max-width:600px;}
