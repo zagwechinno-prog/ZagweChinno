@@ -252,30 +252,70 @@ h3{font-size:20px;margin-bottom:10px;}
 .problem .section-sub{margin-bottom:0;font-size:18px;}
 
 /* SERVICES */
-.services{padding:80px 0 100px;border-bottom:1px solid var(--line);}
-.service-grid{
+.services{padding:90px 0 100px;border-bottom:1px solid var(--line);}
+.services h2{max-width:640px;}
+.services > .wrap-narrow p{color:var(--ink-dim);font-size:17px;margin-bottom:16px;}
+.services-lead{color:var(--ink) !important;font-weight:600;font-size:18px !important;}
+
+.tx-steps{
+  list-style:none;
+  margin-top:56px;
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(2,1fr);
   gap:1px;
   background:var(--line);
   border:1px solid var(--line);
 }
-.service-card{background:var(--bg);padding:28px 24px;}
-.service-no{
+.tx-step{background:var(--bg);padding:32px;}
+.tx-step-head{display:flex;align-items:baseline;gap:14px;margin-bottom:14px;}
+.tx-step-no{font-family:var(--mono);color:var(--accent);font-size:14px;}
+.tx-step-head h3{margin:0;}
+.tx-step-hook{font-weight:600;color:var(--ink) !important;font-size:16px;}
+.tx-step p{color:var(--ink-dim);font-size:15px;margin-bottom:12px;}
+.tx-step-output{
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  font-size:13px !important;
+  color:var(--ink-faint) !important;
+}
+.tx-step-output span{
   font-family:var(--mono);
-  font-size:13px;
   color:var(--accent);
-  display:block;
-  margin-bottom:14px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  font-size:11px;
+  margin-right:8px;
 }
-.service-card h3{font-size:17px;margin-bottom:8px;}
-.service-card p{color:var(--ink-dim);font-size:14px;}
 
-@media (max-width:860px){
-  .service-grid{grid-template-columns:1fr 1fr;}
+.result-list{
+  list-style:none;
+  margin:24px 0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
-@media (max-width:520px){
-  .service-grid{grid-template-columns:1fr;}
+.result-list li{
+  color:var(--ink);
+  font-size:16px;
+  font-weight:600;
+  padding-left:20px;
+  position:relative;
+}
+.result-list li::before{
+  content:"";
+  position:absolute;
+  left:0;top:9px;
+  width:8px;height:1px;
+  background:var(--accent);
+}
+
+.services-close{margin-top:70px;padding-top:56px;border-top:1px solid var(--line);}
+.services-close h3{margin-bottom:18px;}
+.services-close p{color:var(--ink-dim);font-size:16px;margin-bottom:10px;}
+
+@media (max-width:760px){
+  .tx-steps{grid-template-columns:1fr;}
 }
 
 /* BOOK CALL */
