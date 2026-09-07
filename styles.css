@@ -140,6 +140,13 @@ h3{font-size:20px;margin-bottom:10px;}
   border:1px solid var(--line);
   padding:10px;
   background:var(--bg-alt);
+  overflow:hidden;
+  max-height:420px;
+}
+.breakthrough-photo iframe{
+  display:block;
+  width:100%;
+  max-width:100%;
 }
 .breakthrough-photo::before{
   content:"";
